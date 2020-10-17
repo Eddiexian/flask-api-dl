@@ -4,7 +4,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import app.model as model
-import nummpy as np
+import numpy as np
 
 
 
