@@ -16,7 +16,7 @@ CORS(app)
 
 
 @app.route('/test')
-def index():
+def fortest():
     return 'hello test'
 @app.route('/predict', methods=['POST'])
 def postInput():
