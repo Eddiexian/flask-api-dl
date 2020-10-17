@@ -27,6 +27,12 @@ def postInput():
     
     return jsonify({'return': str(result)})
 
+@app.route('/posttest',methods=['POST'])
+def posttest():
+    insertValues = request.get_json()
+    x1 = insertValues['picture']
+    input = np.array([x1])
+    return jsonify({'return': str(input)})
 
 
 
