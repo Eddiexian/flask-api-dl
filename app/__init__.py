@@ -22,7 +22,9 @@ def fortest():
 def postInput():
     insertValues = request.get_json()
     x1 = insertValues['picture']
+    print(x1)
     x1 = eval(x1)
+    print(x1)
     input = np.array(x1)
     result = model.predict(input)
     
