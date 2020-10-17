@@ -22,7 +22,7 @@ def fortest():
 def postInput():
     insertValues = request.get_json()
     x1 = insertValues['picture']
-    input = np.array([x1])
+    input = np.array(x1)
     result = model.predict(input)
     
     return jsonify({'return': str(result)})
@@ -31,7 +31,7 @@ def postInput():
 def posttest():
     insertValues = request.get_json()
     x1 = insertValues['picture']
-    input = np.array([x1])
+    input = np.array(x1)
     return jsonify({'return': str(input)})
 
 
