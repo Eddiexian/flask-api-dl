@@ -18,7 +18,7 @@ CORS(app)
 @app.route('/test')
 def index():
     return 'hello test'
-@app.route('/predict', method=['POST'])
+@app.route('/predict', methods=['POST'])
 def postInput():
     insertValues = request.get_json()
     x1 = insertValues['picture']
