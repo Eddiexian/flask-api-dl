@@ -23,6 +23,7 @@ def postInput():
     insertValues = request.get_json()
     x1 = insertValues['picture']
     #x1 = eval(x1)
+    print(x1)
     input = np.array(x1)
     result = model.predict(input)
     
