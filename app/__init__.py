@@ -26,6 +26,7 @@ def postInput():
     print(x1)
     input = np.array(x1)
     input = input.reshape(1, 28, 28, 1)
+    input = input.astype('float32')
     result = model.predict(input)
     
     return jsonify({'return': str(result)})
