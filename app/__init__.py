@@ -25,7 +25,7 @@ def postInput():
     #x1 = eval(x1)
     print(x1)
     input = np.array(x1)
-    input = input.reshape(1, 1, 28, 28)
+    input = input.reshape(1, 28, 28, 1)
     result = model.predict(input)
     
     return jsonify({'return': str(result)})
